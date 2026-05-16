@@ -1,0 +1,129 @@
+/* ===== GLOBAL ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdf6f0;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background: linear-gradient(135deg, #d4a5b0, #8fac8f) !important;
+    padding: 15px 30px;
+}
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: white !important;
+    font-weight: 600;
+}
+.logo-icon {
+    background: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+.btn-nav {
+    background: rgba(255,255,255,0.3);
+    color: white !important;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    padding: 5px 18px;
+    font-size: 0.85rem;
+}
+.btn-nav:hover {
+    background: rgba(255,255,255,0.5);
+}
+
+/* ===== PAGE TITLE ===== */
+.page-title {
+    font-family: 'Playfair Display', serif;
+    color: #b07080;
+    font-size: 1.8rem;
+}
+
+/* ===== BUTTONS ===== */
+.btn-tambah {
+    background: linear-gradient(135deg, #d4a5b0, #c97d8e);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 22px;
+    font-size: 0.9rem;
+}
+.btn-tambah:hover {
+    background: linear-gradient(135deg, #c97d8e, #b56070);
+    color: white;
+}
+.btn-edit {
+    background: #8fac8f;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 4px 14px;
+    font-size: 0.8rem;
+}
+.btn-edit:hover {
+    background: #7a9a7a;
+    color: white;
+}
+.btn-hapus {
+    background: #d4a5b0;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 4px 14px;
+    font-size: 0.8rem;
+}
+.btn-hapus:hover {
+    background: #c97d8e;
+    color: white;
+}
+
+/* ===== TABLE ===== */
+.table thead {
+    background: linear-gradient(135deg, #d4a5b0, #8fac8f);
+    color: white;
+}
+.table {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    background: white;
+}
+.table tbody tr:hover {
+    background-color: #fce8ee;
+}
+
+/* ===== CARD FORM ===== */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+.form-control, .form-select {
+    border-radius: 10px;
+    border: 1px solid #e0c8d0;
+}
+.form-control:focus, .form-select:focus {
+    border-color: #d4a5b0;
+    box-shadow: 0 0 0 0.2rem rgba(212,165,176,0.25);
+}
+
+/* ===== ALERT ===== */
+.alert-success {
+    background: #e8f5e8;
+    border: 1px solid #8fac8f;
+    color: #5a7a5a;
+    border-radius: 12px;
+}
+
+/* ===== IMAGE ===== */
+.sepatu-img {
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #f0d0d8;
+}
