@@ -19,11 +19,44 @@
         </div>
     </nav>
 
+    <!-- HEADER BANNER -->
+    <div style="background: linear-gradient(135deg, #f5d0da, #d4e8d0); padding: 30px 0;">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div>
+                <img src="{{ asset('images/sepatu1.png') }}" style="height:130px;">
+            </div>
+            <div class="text-center">
+                <h1 style="font-family:'Playfair Display',serif; color:#b07080; font-size:2.5rem;">Nayla Shoes</h1>
+                <p style="color:#8fac8f; font-size:1rem;">Koleksi Sepatu Cantik & Elegan</p>
+            </div>
+            <div>
+                <img src="{{ asset('images/sepatu2.png') }}" style="height:130px;">
+            </div>
+        </div>
+    </div>
+
     <div class="container mt-4">
         <div class="d-flex justify-content-between align-items-center mb-3">
             <h4 class="page-title"><img src="{{ asset('images/sepatu1.png') }}" style="height:40px;"> Data Sepatu</h4>
             <a href="{{ route('sepatu.create') }}" class="btn btn-tambah">+ Tambah Sepatu</a>
         </div>
+
+    <!-- Search Bar -->
+    <form action="{{ route('sepatu.search') }}" method="GET" class="mb-3">
+        <div class="input-group">
+            <input type="text" name="keyword" class="form-control" placeholder="Cari nama sepatu atau merek..." value="{{ request('keyword') }}">
+            <select name="kategori_id" class="form-select" style="max-width:200px;">
+                <option value="">Semua Kategori</option>
+                @foreach($kategoris as $kategori)
+                    <option value="{{ $kategori->id }}" {{ request('kategori_id') == $kategori->id ? 'selected' : '' }}>
+                        {{ $kategori->nama_kategori }}
+                    </option>
+                @endforeach
+            </select>
+            <button class="btn btn-tambah" type="submit">Cari</button>
+            <a href="{{ route('sepatu.index') }}" class="btn btn-edit ms-2">Reset</a>
+        </div>
+    </form>
 
         @if(session('success'))
             <div class="alert alert-success">{{ session('success') }}</div>

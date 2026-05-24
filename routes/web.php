@@ -8,5 +8,6 @@ Route::get('/', function () {
     return redirect()->route('sepatu.index');
 });
 
+Route::get('/sepatu/search', [SepatuController::class, 'search'])->name('sepatu.search');
 Route::resource('sepatu', SepatuController::class);
 Route::resource('kategori', KategoriController::class);
